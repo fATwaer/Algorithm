@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="algorithm" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/algorithm" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/algorithm" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/SortAlgorithm.h" />
+		<Unit filename="include/binarysearchtree.h" />
+		<Unit filename="include/linklist.h" />
+		<Unit filename="include/rbtree.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/BinarySearchTree.cpp" />
+		<Unit filename="src/SortAlgorithm.cpp" />
+		<Unit filename="src/countsort.cpp" />
+		<Unit filename="src/heapsort.cpp" />
+		<Unit filename="src/insertsort.cpp" />
+		<Unit filename="src/linklist.cpp" />
+		<Unit filename="src/merge.cpp" />
+		<Unit filename="src/quicksort.cpp" />
+		<Unit filename="src/radixsort.cpp" />
+		<Unit filename="src/rbtree.cpp" />
+		<Unit filename="src/treeoperation.cpp" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
