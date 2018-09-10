@@ -4,7 +4,7 @@
 void
 SortAlgorithm::insertSort(int a[], int be, int len)
 {
-    for (int i = be+1; i < len; i++) {
+    for (int i = be + 1; i < len; i++) {
         int key = a[i];
         int j = i - 1;
         while (j >= 0 && a[j] > key) {

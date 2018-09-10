@@ -70,8 +70,5 @@ BinarySearchTree::treeDelete(node *z)
         transplant(z, y);
         y->left = z->left;
         y->left->p = y;
-
-
-
     }
 }

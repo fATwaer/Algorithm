@@ -7,14 +7,6 @@ rbtree::rbtree()
     //ctor
     root = NULL;
 
-    //create nil node
-    rbnode *temp = new rbnode;
-    temp->c = BLACK;
-    temp->left = NULL;
-    temp->right = NULL;
-    temp->p = NULL;
-    nil = temp;
-    temp = NULL;
 }
 
 rbtree::~rbtree()

@@ -1,7 +1,10 @@
-#include <iostream>
+
 #include "SortAlgorithm.h"
 #include "binarysearchtree.h"
 #include "rbtree.h"
+#include "DynamicProgramming.h"
+#include <iostream>
+#include <string>
 using namespace std;
 
 
@@ -38,25 +41,33 @@ int main()
     //cout << bst.getRoot()->key;
 
     /* red-black-tree*/
-    rbtree rbt;
-    rbt.Insert(11);
-    rbt.Insert(2);
-    rbt.Insert(13);
-    rbt.Insert(1);
-    rbt.Insert(15);
-    rbt.Insert(7);
-    rbt.Insert(5);
-    rbt.Insert(8);
-    rbt.Insert(4);
-//    rbt.Insert(3);
+//    rbtree rbt;
+//    rbt.Insert(11);
 //    rbt.Insert(2);
+//    rbt.Insert(13);
 //    rbt.Insert(1);
-    rbt.inorder(rbt.getRoot());
+//    rbt.Insert(15);
+//    rbt.Insert(7);
+//    rbt.Insert(5);
+//    rbt.Insert(8);
+//    rbt.Insert(4);
+////    rbt.Insert(3);
+////    rbt.Insert(2);
+////    rbt.Insert(1);
+//    rbt.inorder(rbt.getRoot());
+//
+//    rbnode *c = rbt.nodesearch(2);
+//    printf("find: %d\n", c->key);
+//    rbt.rbDelete(c);
+//    rbt.inorder(rbt.getRoot());
 
-    rbnode *c = rbt.nodesearch(2);
-    printf("find: %d\n", c->key);
-    rbt.rbDelete(c);
-    rbt.inorder(rbt.getRoot());
+    /*lcs*/
+//    string A = "abcdefg";
+//    string B = "bdeg";
+    DynamicProgramming instance2("abcdegf", "akasdp");
+
+    instance2.DebugPrint1();
+    instance2.LCSlength();
 }
 
 

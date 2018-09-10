@@ -5,7 +5,7 @@ void
 SortAlgorithm::countSort()
 {
     // the size fo array c must
-    // bigger than the maximu number
+    // bigger than the maximum number
     // in the array a.
     int length = arrayLength();
     int b[length], c[length];
