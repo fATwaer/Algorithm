@@ -64,10 +64,10 @@ int main()
     /*lcs*/
 //    string A = "abcdefg";
 //    string B = "bdeg";
-    DynamicProgramming instance2("abcdegf", "akasdp");
+    DynamicProgramming instance2("abcabcabcd", "bbbd");
 
     instance2.DebugPrint1();
-    instance2.LCSlength();
+    instance2.LCSlengthIterate();
 }
 
 

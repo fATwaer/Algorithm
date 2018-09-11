@@ -34,12 +34,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/DynamicProgramming.h" />
 		<Unit filename="include/SortAlgorithm.h" />
 		<Unit filename="include/binarysearchtree.h" />
 		<Unit filename="include/linklist.h" />
 		<Unit filename="include/rbtree.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/BinarySearchTree.cpp" />
+		<Unit filename="src/DynamicProgramming.cpp" />
 		<Unit filename="src/SortAlgorithm.cpp" />
 		<Unit filename="src/countsort.cpp" />
 		<Unit filename="src/heapsort.cpp" />
