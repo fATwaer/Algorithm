@@ -37,6 +37,7 @@
 		<Unit filename="include/DynamicProgramming.h" />
 		<Unit filename="include/SortAlgorithm.h" />
 		<Unit filename="include/binarysearchtree.h" />
+		<Unit filename="include/greedy.h" />
 		<Unit filename="include/linklist.h" />
 		<Unit filename="include/rbtree.h" />
 		<Unit filename="main.cpp" />
@@ -44,6 +45,7 @@
 		<Unit filename="src/DynamicProgramming.cpp" />
 		<Unit filename="src/SortAlgorithm.cpp" />
 		<Unit filename="src/countsort.cpp" />
+		<Unit filename="src/greedy.cpp" />
 		<Unit filename="src/heapsort.cpp" />
 		<Unit filename="src/insertsort.cpp" />
 		<Unit filename="src/linklist.cpp" />

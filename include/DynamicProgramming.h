@@ -7,8 +7,8 @@ using namespace std;
 
 enum direction {
     LEFT = 0,
-    UP = 1,
-    UpperLeft = 2
+    UP,
+    UpperLeft
 };
 
 class DynamicProgramming
@@ -18,12 +18,24 @@ class DynamicProgramming
         /** Default constructor */
         DynamicProgramming();
         /** Default destructor */
-        virtual ~DynamicProgramming();
+        ~DynamicProgramming();
 
         /** longest common substring */
-        DynamicProgramming(string s1, string s2) : strA(s1), strB(s2), lcs("") , m(strA.length()+1), n(strB.length()+1){}
+        DynamicProgramming(string s1, string s2) : strA(s1), strB(s2), lcs("") , m(strA.length()+1), n(strB.length()+1){
+                b = (direction **)malloc(sizeof(direction *[m]) * n);
+                c = (int **) malloc (sizeof(int *[m]) * n);
+
+                *b = (direction *)malloc(sizeof(direction) * m * n);
+                *c = (int *)malloc(sizeof(int) * m * n);
+
+                for (int y = 1; y < n; y++ ) {
+                    b[y] = b[y-1] + m;
+                    c[y] = c[y-1] + m;
+                }
+        }
         void DebugPrint1();
-        void LCSlengthIterate();
+        void LCSlengthIterative();
+        int LCSlengthRecursive(int i, int j);
         void PrintLCS(direction **b, int **c, int x, int y);
 
     private:
@@ -32,6 +44,8 @@ class DynamicProgramming
         string strB;
         string lcs;
         int m,n;
+        direction **b;
+        int **c;
 
 };
 

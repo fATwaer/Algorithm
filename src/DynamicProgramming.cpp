@@ -11,6 +11,10 @@ DynamicProgramming::DynamicProgramming()
 DynamicProgramming::~DynamicProgramming()
 {
     //dtor
+    free(*c);
+    free(*b);
+    free(c);
+    free(b);
 }
 
 void
@@ -20,25 +24,21 @@ DynamicProgramming::DebugPrint1()
     std::cout << strA << std::endl;
     std::cout << strB << std::endl;
     std::cout << lcs ;
+    PrintLCS(b, c, m, n);
 }
 
 
 void
-DynamicProgramming::LCSlengthIterate()
+DynamicProgramming::LCSlengthIterative()
 {
     int i = 0, j = 0;
 
     /*as b[m, n], c[m, n]*/
-    direction **b = (direction **)malloc(sizeof(direction *[m]) * n);
-    int **c = (int **) malloc (sizeof(int *[m]) * n);
-
-    *b = (direction *)malloc(sizeof(direction) * m * n);
-    *c = (int *)malloc(sizeof(int) * m * n);
-
-    for (int y = 1; y < n; y++ ) {
-        b[y] = b[y-1] + m;
-        c[y] = c[y-1] + m;
-    }
+//    direction **b = (direction **)malloc(sizeof(direction *[m]) * n);
+//    int **c = (int **) malloc (sizeof(int *[m]) * n);
+//
+//    *b = (direction *)malloc(sizeof(direction) * m * n);
+//    *c = (int *)malloc(sizeof(int) * m * n);
 
 
     for (i = 1; i < m; i++)
@@ -58,9 +58,31 @@ DynamicProgramming::LCSlengthIterate()
                 c[i][j] = c[i-1][j];
                 b[i][j] = UP;
             }
-    }
 
     PrintLCS(b, c, m, n);
+
+}
+
+int
+DynamicProgramming::LCSlengthRecursive(int i, int j)
+{
+
+    if (c[j][i] == 0){
+        if (i == 0 || j == 0)
+            return 0;
+
+        if (strA[i-1] == strB[j-1])
+            c[j][i] = LCSlengthRecursive(i-1, j-1) + 1;
+        else {
+            int x, y;
+            x = LCSlengthRecursive(i-1, j);
+            y = LCSlengthRecursive(i, j-1);
+            c[j][i] = x > y ? x : y;
+        }
+    }
+
+    return c[j][i];
+
 }
 
 
@@ -70,11 +92,14 @@ DynamicProgramming::PrintLCS(direction **b, int **c, int x, int y)
 
     if (x == 0 || y == 0)
         return ;
+
     if (b[y-1][x-1] == UpperLeft) {
         PrintLCS(b, c, x-1, y-1);
-        cout << strB[y-2] <<endl;
-    } else if (b[y-1][x-1] == LEFT)
+        cout << strB[y-2];
+
+    } else if (b[y-1][x-1] == LEFT)//
         PrintLCS(b, c, x-1, y);
+
     else
         PrintLCS(b, c, x, y-1);
 }

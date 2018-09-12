@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1536670260 source:/home/moonlight/cc/algorithm/main.cpp
+1536764209 source:/home/moonlight/cc/algorithm/main.cpp
 	"SortAlgorithm.h"
 	"binarysearchtree.h"
 	"rbtree.h"
@@ -64,13 +64,18 @@
 	<cstdlib>
 	<stdio.h>
 
-1536671603 source:/home/moonlight/cc/algorithm/src/DynamicProgramming.cpp
+1536764711 source:/home/moonlight/cc/algorithm/src/DynamicProgramming.cpp
 	"DynamicProgramming.h"
 	<iostream>
 	<stdlib.h>
 
-1536668833 /home/moonlight/cc/algorithm/include/DynamicProgramming.h
+1536764226 /home/moonlight/cc/algorithm/include/DynamicProgramming.h
 	<string>
 	<stdlib.h>
 	<iostream>
+
+1536729902 source:/home/moonlight/cc/algorithm/src/greedy.cpp
+	"greedy.h"
+
+1536730580 /home/moonlight/cc/algorithm/include/greedy.h
 

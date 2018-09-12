@@ -64,10 +64,9 @@ int main()
     /*lcs*/
 //    string A = "abcdefg";
 //    string B = "bdeg";
-    DynamicProgramming instance2("abcabcabcd", "bbbd");
-
+    DynamicProgramming instance2("abcd", "bc");
+    instance2.LCSlengthRecursive(4, 2);
     instance2.DebugPrint1();
-    instance2.LCSlengthIterate();
 }
 
 
