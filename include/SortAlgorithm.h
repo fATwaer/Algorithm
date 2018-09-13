@@ -31,7 +31,6 @@ class SortAlgorithm
 
 };
 
-inline void pSwap(int &, int &);
+ void pSwap(int &, int &);
 int power(int, int);
-
 #endif // SORTALGORITHM_H

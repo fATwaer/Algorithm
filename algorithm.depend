@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1536764209 source:/home/moonlight/cc/algorithm/main.cpp
+1536853869 source:/home/moonlight/cc/algorithm/main.cpp
 	"SortAlgorithm.h"
 	"binarysearchtree.h"
 	"rbtree.h"
 	"DynamicProgramming.h"
+	"greedy.h"
 	<iostream>
 	<string>
 
@@ -11,7 +12,7 @@
 	"SortAlgorithm.h"
 	<iostream>
 
-1533186032 /home/moonlight/cc/algorithm/include/SortAlgorithm.h
+1536842410 /home/moonlight/cc/algorithm/include/SortAlgorithm.h
 
 1533177364 source:/home/moonlight/cc/algorithm/src/merge.cpp
 	"SortAlgorithm.h"
@@ -20,7 +21,7 @@
 1536492972 source:/home/moonlight/cc/algorithm/src/insertsort.cpp
 	"SortAlgorithm.h"
 
-1533177120 source:/home/moonlight/cc/algorithm/src/heapsort.cpp
+1536826832 source:/home/moonlight/cc/algorithm/src/heapsort.cpp
 	"SortAlgorithm.h"
 
 1533126833 source:/home/moonlight/cc/algorithm/src/quicksort.cpp
@@ -52,7 +53,7 @@
 
 1533447692 /home/moonlight/cc/algorithm/include/redblacktree.h
 
-1536592861 source:/home/moonlight/cc/algorithm/src/rbtree.cpp
+1536842581 source:/home/moonlight/cc/algorithm/src/rbtree.cpp
 	"rbtree.h"
 	<cstdlib>
 	<stdio.h>
@@ -64,7 +65,7 @@
 	<cstdlib>
 	<stdio.h>
 
-1536764711 source:/home/moonlight/cc/algorithm/src/DynamicProgramming.cpp
+1536765284 source:/home/moonlight/cc/algorithm/src/DynamicProgramming.cpp
 	"DynamicProgramming.h"
 	<iostream>
 	<stdlib.h>
@@ -74,8 +75,30 @@
 	<stdlib.h>
 	<iostream>
 
-1536729902 source:/home/moonlight/cc/algorithm/src/greedy.cpp
+1536842410 source:/home/moonlight/cc/algorithm/src/greedy.cpp
+	"greedy.h"
+	"stdio.h"
+
+1536852608 /home/moonlight/cc/algorithm/include/greedy.h
+	<vector>
+	"huffmannode.h"
+
+1536853117 /home/moonlight/cc/algorithm/include/lib.h
+	"huffmannode.h"
+
+1536853756 source:/home/moonlight/cc/algorithm/heap.cpp
+	"lib.h"
+	"stdio.h"
 	"greedy.h"
 
-1536730580 /home/moonlight/cc/algorithm/include/greedy.h
+1536854210 source:/home/moonlight/cc/algorithm/src/huffman.cpp
+	"greedy.h"
+	"huffmannode.h"
+	"lib.h"
+	"stdio.h"
+
+1536840514 source:/home/moonlight/cc/algorithm/src/myfunc.cpp
+	"lib.h"
+
+1536843199 /home/moonlight/cc/algorithm/include/huffmannode.h
 

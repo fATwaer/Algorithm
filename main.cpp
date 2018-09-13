@@ -3,6 +3,8 @@
 #include "binarysearchtree.h"
 #include "rbtree.h"
 #include "DynamicProgramming.h"
+#include "greedy.h"
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -62,11 +64,46 @@ int main()
 //    rbt.inorder(rbt.getRoot());
 
     /*lcs*/
-//    string A = "abcdefg";
-//    string B = "bdeg";
-    DynamicProgramming instance2("abcd", "bc");
-    instance2.LCSlengthRecursive(4, 2);
-    instance2.DebugPrint1();
+
+//    DynamicProgramming instance2("abcd", "bc");
+//    instance2.LCSlengthRecursive(4, 2);
+//    instance2.DebugPrint1();
+
+    /* greedy algorithm*/
+
+        //activity select
+//    ActivitySelect instance3;
+//    instance3.recursive_selector(0, 11);
+//    instance3.iterative_selector(11);
+//    instance3.debug();
+
+        // huffman
+        hfnode arr[] = {
+            hfnode('a', 45),
+            hfnode('b', 13),
+            hfnode('c', 12),
+            hfnode('d', 16),
+            hfnode('e', 9),
+            hfnode('f', 5),
+        };
+        int len = sizeof(arr)/sizeof(arr[0]);
+        Huffmantranslations instance4;
+        instance4.heapify(arr, len);
+        for (int i = 0; i < 6; i++) {
+            printf("%c: %d \n", arr[i].character, arr[i].freq);
+
+        }
+        instance4.buildHuffmanTree(arr, len);
+        cout << endl;
+        for (int i = 0; i < 6; i++) {
+            printf("%c: %d \n", arr[i].character, arr[i].freq);
+
+        }
+
+
+
+
+
 }
 
 

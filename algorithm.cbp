@@ -34,10 +34,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="heap.cpp" />
 		<Unit filename="include/DynamicProgramming.h" />
 		<Unit filename="include/SortAlgorithm.h" />
 		<Unit filename="include/binarysearchtree.h" />
 		<Unit filename="include/greedy.h" />
+		<Unit filename="include/huffmannode.h" />
+		<Unit filename="include/lib.h" />
 		<Unit filename="include/linklist.h" />
 		<Unit filename="include/rbtree.h" />
 		<Unit filename="main.cpp" />
@@ -47,9 +50,11 @@
 		<Unit filename="src/countsort.cpp" />
 		<Unit filename="src/greedy.cpp" />
 		<Unit filename="src/heapsort.cpp" />
+		<Unit filename="src/huffman.cpp" />
 		<Unit filename="src/insertsort.cpp" />
 		<Unit filename="src/linklist.cpp" />
 		<Unit filename="src/merge.cpp" />
+		<Unit filename="src/myfunc.cpp" />
 		<Unit filename="src/quicksort.cpp" />
 		<Unit filename="src/radixsort.cpp" />
 		<Unit filename="src/rbtree.cpp" />
