@@ -4,6 +4,8 @@
 #include "rbtree.h"
 #include "DynamicProgramming.h"
 #include "greedy.h"
+#include "Btree.h"
+#include "bnode.h"
 
 #include <iostream>
 #include <string>
@@ -14,7 +16,7 @@ using namespace std;
 int main()
 {
     /* algorithm  */
-    SortAlgorithm instance;
+    //SortAlgorithm instance;
     //instance.insertSort(0, instance.arrayLength());
     //instance.mergeSort(0, instance.arrayLength()-1);
     //instance.bulidMaxHeap();
@@ -78,30 +80,34 @@ int main()
 //    instance3.debug();
 
         // huffman
-        hfnode arr[] = {
-            hfnode('a', 45),
-            hfnode('b', 13),
-            hfnode('c', 12),
-            hfnode('d', 16),
-            hfnode('e', 9),
-            hfnode('f', 5),
-        };
-        int len = sizeof(arr)/sizeof(arr[0]);
-        Huffmantranslations instance4;
-        instance4.heapify(arr, len);
-        for (int i = 0; i < 6; i++) {
-            printf("%c: %d \n", arr[i].character, arr[i].freq);
+//        hfnode arr[] = {
+//            hfnode('a', 45),
+//            hfnode('b', 13),
+//            hfnode('c', 12),
+//            hfnode('d', 16),
+//            hfnode('e', 9),
+//            hfnode('f', 5),
+//        };
+//        int len = sizeof(arr)/sizeof(arr[0]);
+//        Huffmantranslations instance4;
+//        instance4.heapify(arr, len);
+//        for (int i = 0; i < 6; i++) {
+//            printf("%c: %d \n", arr[i].character, arr[i].freq);
+//
+//        }
+//        instance4.buildHuffmanTree(arr, len);
+//        cout << endl;
+//        for (int i = 0; i < 6; i++) {
+//            printf("%c: %d \n", arr[i].character, arr[i].freq);
+//
+//        }
 
-        }
-        instance4.buildHuffmanTree(arr, len);
-        cout << endl;
-        for (int i = 0; i < 6; i++) {
-            printf("%c: %d \n", arr[i].character, arr[i].freq);
 
-        }
-
-
-
+    Btree instance5;
+    bnode* x = instance5.BTree_Create();
+    instance5.BTree_Insert('a');
+    instance5.BTree_Insert('b');
+    //printf("(x->key)[0]: %c, (x->key)[1]: %c", (x->key)[0], (x->key)[1]);
 
 
 }

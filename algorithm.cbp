@@ -35,9 +35,11 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="heap.cpp" />
+		<Unit filename="include/Btree.h" />
 		<Unit filename="include/DynamicProgramming.h" />
 		<Unit filename="include/SortAlgorithm.h" />
 		<Unit filename="include/binarysearchtree.h" />
+		<Unit filename="include/bnode.h" />
 		<Unit filename="include/greedy.h" />
 		<Unit filename="include/huffmannode.h" />
 		<Unit filename="include/lib.h" />
@@ -45,6 +47,7 @@
 		<Unit filename="include/rbtree.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/BinarySearchTree.cpp" />
+		<Unit filename="src/Btree.cpp" />
 		<Unit filename="src/DynamicProgramming.cpp" />
 		<Unit filename="src/SortAlgorithm.cpp" />
 		<Unit filename="src/countsort.cpp" />
