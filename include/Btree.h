@@ -16,6 +16,9 @@ class Btree
         void DiskWrite(bnode *x);
         void BTree_Insert(char key);
         void BTree_Insert_NONFULL(bnode *x, char k);
+        bnode* Allocate_Node();
+        int BTree_Delete(bnode *x, char k);
+        bnode* _root();
     private:
         int t;      // minimum degree
         bnode *root;

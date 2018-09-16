@@ -8,6 +8,7 @@ typedef struct btreenode
     /* both key and child pointer need to be allocated according to the value **n** */
     struct btreenode **cp; // point to the child pointer
     char *key; // point to the key area
+    void ** diskpage;
 
 }bnode;
 

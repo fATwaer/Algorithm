@@ -106,8 +106,53 @@ int main()
     Btree instance5;
     bnode* x = instance5.BTree_Create();
     instance5.BTree_Insert('a');
+    instance5.BTree_Insert('c');
+    instance5.BTree_Insert('e');
     instance5.BTree_Insert('b');
-    //printf("(x->key)[0]: %c, (x->key)[1]: %c", (x->key)[0], (x->key)[1]);
+    instance5.BTree_Insert('d');
+    //instance5.BTree_Insert('f');
+//
+//    for (int i = 'a'; i < 'a'+3; i++)
+//        instance5.BTree_Insert(i);
+
+//    instance5.BTree_Delete(x, 'a');
+//    instance5.BTree_Delete(x, 'b');
+//    for (int i = 0; i < 4; i++)
+//        printf("(x->key)[%d]: %c\n", i, (x->key)[i]);
+//
+
+    //printf("%c", (((x->cp)[1])->key)[2]);
+    x = instance5._root();
+//    for (int i = 0; i < 4; i++)
+//        printf("(x->key)[%d]: %c\n", i, (x->key)[i]);
+//    for (int i = 0; i < 4; i++)
+//        printf("%d: (left:%c right: %c)\n", i, (((x->cp)[1])->key)[i], (((x->cp)[2])->key)[i]);
+
+    instance5.BTree_Delete(x,'e');
+    x = instance5._root();
+    for (int i = 0; i < 4; i++)
+        printf("root[%d]: %c\n", i, (x->key)[i]);
+    printf("n : %d\n", x->n);
+    for (int i = 0; i < 4; i++)
+        printf("%d: (left:%c right: %c)\n", i, (((x->cp)[1])->key)[i], (((x->cp)[2])->key)[i]);
+    printf("left : %d, right : %d \n", (((x->cp)[1])->n), (((x->cp)[2])->n));
+
+
+    instance5.BTree_Delete(x,'d');
+    x = instance5._root();
+    for (int i = 0; i < 4; i++)
+        printf("root[%d]: %c\n", i, (x->key)[i]);
+    printf("n : %d\n", x->n);
+    for (int i = 0; i < 4; i++)
+        printf("%d: (left:%c right: %c)\n", i, (((x->cp)[1])->key)[i], (((x->cp)[2])->key)[i]);
+    printf("left : %d, right : %d \n", (((x->cp)[1])->n), (((x->cp)[2])->n));
+
+
+    instance5.BTree_Delete(x,'c');
+    x = instance5._root();
+    for (int i = 0; i < 4; i++)
+        printf("root[%d]: %c\n", i, (x->key)[i]);
+    printf("n : %d\n", x->n);
 
 
 }
