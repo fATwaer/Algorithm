@@ -51,14 +51,14 @@ void
  }
 
 
- void
- ActivitySelect::iterative_selector(int n)
- {
-    int k = 1;
-    greedy_sequence.push_back(k);
-    for (int m = 2; m <= n; m++)
-        if (s[m] >= f[k]) {
-            greedy_sequence.push_back(m);
-            k = m;
-        }
- }
+void
+ActivitySelect::iterative_selector(int n)
+{
+int k = 1;
+greedy_sequence.push_back(k);
+for (int m = 2; m <= n; m++)
+    if (s[m] >= f[k]) {
+        greedy_sequence.push_back(m);
+        k = m;
+    }
+}

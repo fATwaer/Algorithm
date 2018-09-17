@@ -20,15 +20,20 @@ rbtree::LeftRotate(rbnode *x)
 {
     rbnode *y = x->right;
     x->right = y->left;
+
     if (y->left != NULL)
         y->left->p = x;
     y->p = x->p;
+
     if (x->p == NULL)
         root = y;
+
     else if (x == x->p->left)
         x->p->left = y;
+
     else
         x->p->right = x;
+
     y->left = x;
     x->p = y;
 }
@@ -36,18 +41,22 @@ rbtree::LeftRotate(rbnode *x)
 void
 rbtree::RightRotate(rbnode *y)
 {
-    printf("rotate:%d\n", y->key);
     rbnode *x = y->left;
     y->left = x->right;
+
     if (x->right != NULL)
         x->right->p = y;
     x->p = y->p;
+
     if (y->p == NULL)
         root = x;
+
     else if (y == y->p->left)
         x = y->p->left;
+
     else
         x = y->p->right;
+
     x->right = y;
     y->p = x;
 

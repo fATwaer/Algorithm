@@ -37,13 +37,17 @@ Btree::BTree_SplitChild(bnode *x, int i)
     z->leaf = y->leaf;
     z->n = t-1;
 
+
     for (int j = 1; j <= t-1; j++)
         (z->key)[j] = (y->key)[j+t]; // j+t = j + (t-1) + 1
+
+
     if (y->leaf == false)
         for (int j = 1; j <= t; j++)
             (z->cp)[j] = (y->cp)[j+t];
-
     y->n = t-1;
+
+
     for (int j = x->n + 1; j >= i+1; j--)
         (x->cp)[j+1] = (x->cp)[j];
     (x->cp)[i+1] = z;
@@ -51,8 +55,12 @@ Btree::BTree_SplitChild(bnode *x, int i)
     for (int j = x->n; j >= i; j--)
         (x->key)[j+1] = (x->key)[j];
     (x->key)[i] = (y->key)[t];
+
+
     printf("split->[%c]\n", (x->key)[i]);
     x->n++;
+
+
     DiskWrite(x);
     DiskWrite(y);
     DiskWrite(z);
