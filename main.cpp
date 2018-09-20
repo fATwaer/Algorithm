@@ -6,6 +6,8 @@
 #include "greedy.h"
 #include "Btree.h"
 #include "bnode.h"
+#include "FIB.h"
+
 
 #include <iostream>
 #include <string>
@@ -103,56 +105,64 @@ int main()
 //        }
 
 
-    Btree instance5;
-    bnode* x = instance5.BTree_Create();
-    instance5.BTree_Insert('a');
-    instance5.BTree_Insert('c');
-    instance5.BTree_Insert('e');
-    instance5.BTree_Insert('b');
-    instance5.BTree_Insert('d');
-    //instance5.BTree_Insert('f');
-//
-//    for (int i = 'a'; i < 'a'+3; i++)
-//        instance5.BTree_Insert(i);
+        //b - tree
 
-//    instance5.BTree_Delete(x, 'a');
-//    instance5.BTree_Delete(x, 'b');
-//    for (int i = 0; i < 4; i++)
-//        printf("(x->key)[%d]: %c\n", i, (x->key)[i]);
+//    Btree instance5;
+//    bnode* x = instance5.BTree_Create();
+//    instance5.BTree_Insert('a');
+//    instance5.BTree_Insert('c');
+//    instance5.BTree_Insert('e');
+//    instance5.BTree_Insert('b');
+//    instance5.BTree_Insert('d');
+//    //instance5.BTree_Insert('f');
+////
+////    for (int i = 'a'; i < 'a'+3; i++)
+////        instance5.BTree_Insert(i);
 //
-
-    //printf("%c", (((x->cp)[1])->key)[2]);
-    x = instance5._root();
+////    instance5.BTree_Delete(x, 'a');
+////    instance5.BTree_Delete(x, 'b');
+////    for (int i = 0; i < 4; i++)
+////        printf("(x->key)[%d]: %c\n", i, (x->key)[i]);
+////
+//
+//    //printf("%c", (((x->cp)[1])->key)[2]);
+//    x = instance5._root();
+////    for (int i = 0; i < 4; i++)
+////        printf("(x->key)[%d]: %c\n", i, (x->key)[i]);
+////    for (int i = 0; i < 4; i++)
+////        printf("%d: (left:%c right: %c)\n", i, (((x->cp)[1])->key)[i], (((x->cp)[2])->key)[i]);
+//
+//    instance5.BTree_Delete(x,'e');
+//    x = instance5._root();
 //    for (int i = 0; i < 4; i++)
-//        printf("(x->key)[%d]: %c\n", i, (x->key)[i]);
+//        printf("root[%d]: %c\n", i, (x->key)[i]);
+//    printf("n : %d\n", x->n);
 //    for (int i = 0; i < 4; i++)
 //        printf("%d: (left:%c right: %c)\n", i, (((x->cp)[1])->key)[i], (((x->cp)[2])->key)[i]);
+//    printf("left : %d, right : %d \n", (((x->cp)[1])->n), (((x->cp)[2])->n));
+//
+//
+//    instance5.BTree_Delete(x,'d');
+//    x = instance5._root();
+//    for (int i = 0; i < 4; i++)
+//        printf("root[%d]: %c\n", i, (x->key)[i]);
+//    printf("n : %d\n", x->n);
+//    for (int i = 0; i < 4; i++)
+//        printf("%d: (left:%c right: %c)\n", i, (((x->cp)[1])->key)[i], (((x->cp)[2])->key)[i]);
+//    printf("left : %d, right : %d \n", (((x->cp)[1])->n), (((x->cp)[2])->n));
+//
+//
+//    instance5.BTree_Delete(x,'c');
+//    x = instance5._root();
+//    for (int i = 0; i < 4; i++)
+//        printf("root[%d]: %c\n", i, (x->key)[i]);
+//    printf("n : %d\n", x->n);
 
-    instance5.BTree_Delete(x,'e');
-    x = instance5._root();
-    for (int i = 0; i < 4; i++)
-        printf("root[%d]: %c\n", i, (x->key)[i]);
-    printf("n : %d\n", x->n);
-    for (int i = 0; i < 4; i++)
-        printf("%d: (left:%c right: %c)\n", i, (((x->cp)[1])->key)[i], (((x->cp)[2])->key)[i]);
-    printf("left : %d, right : %d \n", (((x->cp)[1])->n), (((x->cp)[2])->n));
-
-
-    instance5.BTree_Delete(x,'d');
-    x = instance5._root();
-    for (int i = 0; i < 4; i++)
-        printf("root[%d]: %c\n", i, (x->key)[i]);
-    printf("n : %d\n", x->n);
-    for (int i = 0; i < 4; i++)
-        printf("%d: (left:%c right: %c)\n", i, (((x->cp)[1])->key)[i], (((x->cp)[2])->key)[i]);
-    printf("left : %d, right : %d \n", (((x->cp)[1])->n), (((x->cp)[2])->n));
-
-
-    instance5.BTree_Delete(x,'c');
-    x = instance5._root();
-    for (int i = 0; i < 4; i++)
-        printf("root[%d]: %c\n", i, (x->key)[i]);
-    printf("n : %d\n", x->n);
+    // fib heap
+    FIB instance6;
+    instance6.Insert(10);
+    instance6.Insert(11);
+    instance6.Insert(12);
 
 
 }

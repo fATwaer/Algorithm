@@ -1,7 +1,7 @@
-#define LINKLIST_H
 #ifndef LINKLIST_H
+#define LINKLIST_H
 
-
+//template <typename node>
 class linklist
 {
     public:
@@ -11,6 +11,7 @@ class linklist
         virtual ~linklist();
 
     private:
+//        node* root;
 };
 
 #endif // LINKLIST_H

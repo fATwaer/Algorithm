@@ -37,9 +37,11 @@
 		<Unit filename="heap.cpp" />
 		<Unit filename="include/Btree.h" />
 		<Unit filename="include/DynamicProgramming.h" />
+		<Unit filename="include/FIB.h" />
 		<Unit filename="include/SortAlgorithm.h" />
 		<Unit filename="include/binarysearchtree.h" />
 		<Unit filename="include/bnode.h" />
+		<Unit filename="include/fibnode.h" />
 		<Unit filename="include/greedy.h" />
 		<Unit filename="include/huffmannode.h" />
 		<Unit filename="include/lib.h" />
@@ -49,6 +51,7 @@
 		<Unit filename="src/BinarySearchTree.cpp" />
 		<Unit filename="src/Btree.cpp" />
 		<Unit filename="src/DynamicProgramming.cpp" />
+		<Unit filename="src/FIB.cpp" />
 		<Unit filename="src/SortAlgorithm.cpp" />
 		<Unit filename="src/countsort.cpp" />
 		<Unit filename="src/greedy.cpp" />
