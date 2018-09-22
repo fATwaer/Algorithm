@@ -159,12 +159,26 @@ int main()
 //    printf("n : %d\n", x->n);
 
     // fib heap
-    FIB instance6;
-    instance6.Insert(10);
-    instance6.Insert(11);
-    instance6.Insert(12);
+    FIB *instance6 = new FIB;
+    (*instance6).Insert(10);
+    (*instance6).Insert(11);
+    (*instance6).Insert(12);
+    (*instance6).debug();
 
+    FIB *instance7 = new FIB;
+    (*instance7).Insert(20);
+    (*instance7).Insert(2);
+    (*instance7).Insert(7);
+    (*instance7).Insert(0);
+    (*instance7).debug();
 
+    FIB &H = (*instance6).FIB_HeapUnion(instance7);
+    H.debug();
+
+    printf("extract value: %d\n", H.ExtractMin());
+    H.debug();
+    printf("extract value: %d\n", H.ExtractMin());
+    H.debug();
 }
 
 
