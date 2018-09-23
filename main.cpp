@@ -179,6 +179,17 @@ int main()
     H.debug();
     printf("extract value: %d\n", H.ExtractMin());
     H.debug();
+    printf("extract value: %d\n", H.ExtractMin());
+    H.debug();
+    printf("extract value: %d\n", H.ExtractMin());
+    H.debug();
+    printf("extract value: %d\n", H.ExtractMin());
+    H.debug();
+    printf("extract value: %d\n", H.ExtractMin());
+    H.debug();
+    printf("extract value: %d\n", H.ExtractMin());
+    //H.Insert(1);
+    H.debug();
 }
 
 

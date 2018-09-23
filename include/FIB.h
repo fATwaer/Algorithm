@@ -27,6 +27,9 @@ class FIB
         void Consolidate();
 
     private:
+        void FIB_CasecadingCut(fibn*);
+        void FIB_Cut(fibn*, fibn*);
+        void FIB_DecreaseKey(fibn*, int);
         void FIB_HeapInsert(fibn *x);
         void FIB_wlink(fibn* x);
         fibn* FIB_ExtractMin();
