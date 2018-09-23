@@ -25,6 +25,7 @@ class FIB
 
         int ExtractMin();
         void Consolidate();
+        void DecreaseRoot();
 
     private:
         void FIB_CasecadingCut(fibn*);

@@ -384,4 +384,10 @@ FIB::debug()
 }
 
 
+void
+FIB::DecreaseRoot()
+{
+    fibn* x = root;
+    FIB_DecreaseKey(x, 1);
 
+}
