@@ -8,6 +8,7 @@
 #include "bnode.h"
 #include "FIB.h"
 #include "vanEmdeBoas.h"
+#include "HashTables.h"
 
 #include <iostream>
 #include <string>
@@ -181,26 +182,27 @@ int main()
 //    H.debug();
 
     //van emde boas tree
-    vanEmdeBoas instance10(16);
-    //instance10.debug1(instance10.getRoot());
-    instance10.Insert(2);
-    instance10.Insert(3);
-    instance10.Insert(4);
-    instance10.Insert(5);
-    instance10.Insert(7);
-    instance10.Insert(14);
-    instance10.Insert(15);
+//    vanEmdeBoas instance10(16);
+//    //instance10.debug1(instance10.getRoot());
+//    instance10.Insert(2);
+//    instance10.Insert(3);
+//    instance10.Insert(4);
+//    instance10.Insert(5);
+//    instance10.Insert(7);
+//    instance10.Insert(14);
+//    instance10.Insert(15);
+//
+//    printf("7 is member ? %s\n", instance10.isMember(7) == 1 ? "true" : "false");
+//    printf("8 is member ? %s\n", instance10.isMember(8) == 1 ? "true" : "false");
+//
+//    printf("the successor of %d is %d\n", 7, instance10.successor(7));
+//    printf("the successor of %d is %d\n", 4, instance10.successor(4));
+//
+//    printf("the predecressor of %d is %d\n", 4, instance10.predecressor(4));
+//    instance10.Delete(2);
 
-    printf("7 is member ? %s\n", instance10.isMember(7) == 1 ? "true" : "false");
-    printf("8 is member ? %s\n", instance10.isMember(8) == 1 ? "true" : "false");
-
-    printf("the successor of %d is %d\n", 7, instance10.successor(7));
-    printf("the successor of %d is %d\n", 4, instance10.successor(4));
-
-    printf("the predecressor of %d is %d\n", 4, instance10.predecressor(4));
-    instance10.Delete(2);
-
-
+    HashTables instance11;
+    instance11.debug();
 
 }
 

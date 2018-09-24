@@ -2,6 +2,7 @@
 #define LIB_H_INCLUDED
 //#include "SortAlgorithm.h"
 #include "huffmannode.h"
+#include "linklist.h"
 
 /*minimum heap*/
 inline int _Parent(int i);
@@ -15,6 +16,10 @@ void buildHeap(hfnode* , int len);
 int extractmin(int*, int& len);
 hfnode& extractmin(hfnode *, int& len);
 void heapInsert(hfnode*, int&, hfnode&);
+
+/*basic linklist*/
+void linklist_insert(lknode**, int k);
+void linklist_debug(lknode*);
 
 template<typename T>
 void

@@ -38,6 +38,7 @@
 		<Unit filename="include/Btree.h" />
 		<Unit filename="include/DynamicProgramming.h" />
 		<Unit filename="include/FIB.h" />
+		<Unit filename="include/HashTables.h" />
 		<Unit filename="include/SortAlgorithm.h" />
 		<Unit filename="include/binarysearchtree.h" />
 		<Unit filename="include/bnode.h" />
@@ -47,24 +48,27 @@
 		<Unit filename="include/lib.h" />
 		<Unit filename="include/linklist.h" />
 		<Unit filename="include/rbtree.h" />
+		<Unit filename="include/vanEmdeBoas.h" />
+		<Unit filename="linklist.cpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/BinarySearchTree.cpp" />
 		<Unit filename="src/Btree.cpp" />
 		<Unit filename="src/DynamicProgramming.cpp" />
 		<Unit filename="src/FIB.cpp" />
+		<Unit filename="src/HashTables.cpp" />
 		<Unit filename="src/SortAlgorithm.cpp" />
 		<Unit filename="src/countsort.cpp" />
 		<Unit filename="src/greedy.cpp" />
 		<Unit filename="src/heapsort.cpp" />
 		<Unit filename="src/huffman.cpp" />
 		<Unit filename="src/insertsort.cpp" />
-		<Unit filename="src/linklist.cpp" />
 		<Unit filename="src/merge.cpp" />
 		<Unit filename="src/myfunc.cpp" />
 		<Unit filename="src/quicksort.cpp" />
 		<Unit filename="src/radixsort.cpp" />
 		<Unit filename="src/rbtree.cpp" />
 		<Unit filename="src/treeoperation.cpp" />
+		<Unit filename="src/vanEmdeBoas.cpp" />
 		<Extensions>
 			<envvars />
 			<code_completion />

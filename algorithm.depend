@@ -4,8 +4,9 @@
 	"stdio.h"
 	"greedy.h"
 
-1536853117 /home/moonlight/cc/algorithm/include/lib.h
+1537803158 /home/moonlight/cc/algorithm/include/lib.h
 	"huffmannode.h"
+	"linklist.h"
 
 1536843199 /home/moonlight/cc/algorithm/include/huffmannode.h
 
@@ -13,7 +14,7 @@
 	<vector>
 	"huffmannode.h"
 
-1537793272 source:/home/moonlight/cc/algorithm/main.cpp
+1537802700 source:/home/moonlight/cc/algorithm/main.cpp
 	"SortAlgorithm.h"
 	"binarysearchtree.h"
 	"rbtree.h"
@@ -23,6 +24,7 @@
 	"bnode.h"
 	"FIB.h"
 	"vanEmdeBoas.h"
+	"HashTables.h"
 	<iostream>
 	<string>
 
@@ -104,7 +106,7 @@
 	"Btree.h"
 	"stdio.h"
 
-1537455092 /home/moonlight/cc/algorithm/include/linklist.h
+1537802183 /home/moonlight/cc/algorithm/include/linklist.h
 
 1537717877 source:/home/moonlight/cc/algorithm/src/FIB.cpp
 	"FIB.h"
@@ -130,4 +132,18 @@
 1537754987 /home/moonlight/cc/algorithm/include/vEBnode.h
 	"math.h"
 	"stdlib.h"
+
+1537803115 source:/home/moonlight/cc/algorithm/src/HashTables.cpp
+	"HashTables.h"
+	"lib.h"
+	"stdio.h"
+
+1537802541 /home/moonlight/cc/algorithm/include/HashTables.h
+	"linklist.h"
+
+1537802565 source:/home/moonlight/cc/algorithm/linklist.cpp
+	"lib.h"
+	"stdlib.h"
+	"stdio.h"
+	"linklist.h"
 
