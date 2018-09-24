@@ -7,7 +7,7 @@
 #include "Btree.h"
 #include "bnode.h"
 #include "FIB.h"
-
+#include "vanEmdeBoas.h"
 
 #include <iostream>
 #include <string>
@@ -159,26 +159,49 @@ int main()
 //    printf("n : %d\n", x->n);
 
     // fib heap
-    FIB *instance6 = new FIB;
-    (*instance6).Insert(10);
-    (*instance6).Insert(11);
-    (*instance6).Insert(12);
-    (*instance6).debug();
+//    FIB *instance6 = new FIB;
+//    (*instance6).Insert(10);
+//    (*instance6).Insert(11);
+//    (*instance6).Insert(12);
+//    (*instance6).debug();
+//
+//    FIB *instance7 = new FIB;
+//    (*instance7).Insert(20);
+//    (*instance7).Insert(2);
+//    (*instance7).Insert(7);
+//    (*instance7).Insert(0);
+//    (*instance7).debug();
+//
+//    FIB &H = (*instance6).FIB_HeapUnion(instance7);
+//    H.debug();
+//
+//    printf("extract value: %d\n", H.ExtractMin());
+//    H.debug();
+//    H.DecreaseRoot();
+//    H.debug();
 
-    FIB *instance7 = new FIB;
-    (*instance7).Insert(20);
-    (*instance7).Insert(2);
-    (*instance7).Insert(7);
-    (*instance7).Insert(0);
-    (*instance7).debug();
+    //van emde boas tree
+    vanEmdeBoas instance10(16);
+    //instance10.debug1(instance10.getRoot());
+    instance10.Insert(2);
+    instance10.Insert(3);
+    instance10.Insert(4);
+    instance10.Insert(5);
+    instance10.Insert(7);
+    instance10.Insert(14);
+    instance10.Insert(15);
 
-    FIB &H = (*instance6).FIB_HeapUnion(instance7);
-    H.debug();
+    printf("7 is member ? %s\n", instance10.isMember(7) == 1 ? "true" : "false");
+    printf("8 is member ? %s\n", instance10.isMember(8) == 1 ? "true" : "false");
 
-    printf("extract value: %d\n", H.ExtractMin());
-    H.debug();
-    H.DecreaseRoot();
-    H.debug();
+    printf("the successor of %d is %d\n", 7, instance10.successor(7));
+    printf("the successor of %d is %d\n", 4, instance10.successor(4));
+
+    printf("the predecressor of %d is %d\n", 4, instance10.predecressor(4));
+    instance10.Delete(2);
+
+
+
 }
 
 

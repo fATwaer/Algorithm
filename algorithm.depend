@@ -13,7 +13,7 @@
 	<vector>
 	"huffmannode.h"
 
-1537717888 source:/home/moonlight/cc/algorithm/main.cpp
+1537793272 source:/home/moonlight/cc/algorithm/main.cpp
 	"SortAlgorithm.h"
 	"binarysearchtree.h"
 	"rbtree.h"
@@ -22,6 +22,7 @@
 	"Btree.h"
 	"bnode.h"
 	"FIB.h"
+	"vanEmdeBoas.h"
 	<iostream>
 	<string>
 
@@ -115,4 +116,18 @@
 	"fibnode.h"
 
 1537457667 /home/moonlight/cc/algorithm/include/fibnode.h
+
+1537793239 source:/home/moonlight/cc/algorithm/src/vanEmdeBoas.cpp
+	"vanEmdeBoas.h"
+	"vEBnode.h"
+	"math.h"
+	"stdio.h"
+	"lib.h"
+
+1537793228 /home/moonlight/cc/algorithm/include/vanEmdeBoas.h
+	"vEBnode.h"
+
+1537754987 /home/moonlight/cc/algorithm/include/vEBnode.h
+	"math.h"
+	"stdlib.h"
 
