@@ -10,9 +10,15 @@ class HashTables
         /** Default destructor */
         virtual ~HashTables();
         void debug();
-
+        void Insert(int key);
     private:
-        lknode* division_p;
+        int m = 100;
+        lknode** division_p;
 };
 
+inline int
+hash_function(int key)
+{
+    return key % 43;
+}
 #endif // HASHTABLES_H

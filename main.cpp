@@ -9,6 +9,7 @@
 #include "FIB.h"
 #include "vanEmdeBoas.h"
 #include "HashTables.h"
+#include "cstdlib"
 
 #include <iostream>
 #include <string>
@@ -202,6 +203,9 @@ int main()
 //    instance10.Delete(2);
 
     HashTables instance11;
+    //instance11.debug();
+    for (int i = 0; i < 100; i++)
+        instance11.Insert(rand()%1000);
     instance11.debug();
 
 }
